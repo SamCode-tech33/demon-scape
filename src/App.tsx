@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Phaser from 'phaser';
 import { gameConfig } from './game/config';
-import "./App.css";
+import "./global.css";
 
 function App() {
   useEffect(() => {
@@ -11,7 +11,7 @@ function App() {
     };
   }, []);
 
-  return <div id="game-container" />;
+  return <div id="gameCanvas" />
 }
 
 export default App;

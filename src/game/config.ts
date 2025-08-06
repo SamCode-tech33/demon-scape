@@ -1,12 +1,16 @@
-import Phaser from 'phaser';
-import GameScene from './GameScene';
+import Phaser from "phaser";
+import GameScene from "./GameScene";
+
+const speedDown = 300;
 
 export const gameConfig: Phaser.Types.Core.GameConfig = {
-  type: Phaser.AUTO,
-  width: 800,
-  height: 600,
-  parent: 'game-container', // attach canvas to this div
-  physics: { default: 'arcade' },
+  type: Phaser.WEBGL,
+  width: 1536,
+  height: 740,
+  parent: "gameCanvas",
+  physics: {
+    default: "arcade",
+    arcade: { gravity: { y: speedDown, x: 0 }, debug: true },
+  },
   scene: [GameScene],
 };
-
