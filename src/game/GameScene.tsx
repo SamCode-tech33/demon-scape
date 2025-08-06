@@ -7,7 +7,7 @@ export default class GameScene extends Phaser.Scene {
 
   preload() {
     // Load the map and the tileset image
-    this.load.tilemapTiledJSON("map", "/map.json"); // your exported JSON
+    this.load.tilemapTiledJSON("map", "/demonscape-test1-dungeon.json"); // your exported JSON
     this.load.image("tiles", "/level-1-dungeon.png"); // your master PNG
   }
 
